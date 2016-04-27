@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en' ng-app="voteApp">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+        <title>Search Electric Or Not</title>
+        <style>
+          #images {
+            width: 120px;
+          }
+        </style>
+
+    </head>
+    <body ng-controller="mainController">
+        <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div ng-repeat="x in carresults">
+                            <div style="text-align: center">
+                                <ul>
+                                    <li style="padding: 3px; background-color: lightgray; list-style:none"><img id="images" src={{imagePath}}{{x.imageSrc}}></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script type="text/javascript" src="maincontroller.js"></script>
+    </body>
+</html>
